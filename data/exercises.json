@@ -1,0 +1,614 @@
+[
+  {
+    "nome": "Supino reto",
+    "grupo": "superiores",
+    "subgrupo": ["peito", "tríceps", "ombros"],
+    "categoria": "musculacao",
+    "equipamento": "Barra/Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "8-10", "carga": "60-75% 1RM" },
+      "pesado": { "repeticoes": "4-6", "carga": "75-90% 1RM" }
+    }
+  },
+  {
+    "nome": "Supino inclinado",
+    "grupo": "superiores",
+    "subgrupo": ["peito", "tríceps", "ombros"],
+    "categoria": "musculacao",
+    "equipamento": "Barra/Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "8-10", "carga": "60-75% 1RM" },
+      "pesado": { "repeticoes": "4-6", "carga": "75-90% 1RM" }
+    }
+  },
+  {
+    "nome": "Crucifixo",
+    "grupo": "superiores",
+    "subgrupo": ["peito", "ombros"],
+    "categoria": "musculacao",
+    "equipamento": "Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "10-12", "carga": "60-70% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "70-80% 1RM" }
+    }
+  },
+  {
+    "nome": "Remada curvada",
+    "grupo": "superiores",
+    "subgrupo": ["costas", "bíceps", "ombros"],
+    "categoria": "musculacao",
+    "equipamento": "Barra",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "8-10", "carga": "60-75% 1RM" },
+      "pesado": { "repeticoes": "4-6", "carga": "75-90% 1RM" }
+    }
+  },
+  {
+    "nome": "Remada unilateral",
+    "grupo": "superiores",
+    "subgrupo": ["costas", "bíceps"],
+    "categoria": "musculacao",
+    "equipamento": "Halter",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "8-10", "carga": "60-75% 1RM" },
+      "pesado": { "repeticoes": "6-8", "carga": "75-85% 1RM" }
+    }
+  },
+  {
+    "nome": "Pullover",
+    "grupo": "superiores",
+    "subgrupo": ["costas", "peito"],
+    "categoria": "musculacao",
+    "equipamento": "Barra/Halter",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "10-12", "carga": "60-70% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "70-80% 1RM" }
+    }
+  },
+  {
+    "nome": "Desenvolvimento militar",
+    "grupo": "superiores",
+    "subgrupo": ["ombros", "tríceps"],
+    "categoria": "musculacao",
+    "equipamento": "Barra/Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "8-10", "carga": "60-75% 1RM" },
+      "pesado": { "repeticoes": "4-6", "carga": "75-90% 1RM" }
+    }
+  },
+  {
+    "nome": "Elevação lateral",
+    "grupo": "superiores",
+    "subgrupo": ["ombros"],
+    "categoria": "musculacao",
+    "equipamento": "Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20", "carga": "30-50% 1RM" },
+      "moderado": { "repeticoes": "12-15", "carga": "50-65% 1RM" },
+      "pesado": { "repeticoes": "10-12", "carga": "65-75% 1RM" }
+    }
+  },
+  {
+    "nome": "Elevação frontal",
+    "grupo": "superiores",
+    "subgrupo": ["ombros"],
+    "categoria": "musculacao",
+    "equipamento": "Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20", "carga": "30-50% 1RM" },
+      "moderado": { "repeticoes": "12-15", "carga": "50-65% 1RM" },
+      "pesado": { "repeticoes": "10-12", "carga": "65-75% 1RM" }
+    }
+  },
+  {
+    "nome": "Rosca direta",
+    "grupo": "superiores",
+    "subgrupo": ["bíceps"],
+    "categoria": "musculacao",
+    "equipamento": "Barra/Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20", "carga": "30-50% 1RM" },
+      "moderado": { "repeticoes": "12-15", "carga": "50-65% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "65-80% 1RM" }
+    }
+  },
+  {
+    "nome": "Rosca alternada",
+    "grupo": "superiores",
+    "subgrupo": ["bíceps"],
+    "categoria": "musculacao",
+    "equipamento": "Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20", "carga": "30-50% 1RM" },
+      "moderado": { "repeticoes": "12-15", "carga": "50-65% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "65-80% 1RM" }
+    }
+  },
+  {
+    "nome": "Tríceps francês",
+    "grupo": "superiores",
+    "subgrupo": ["tríceps"],
+    "categoria": "musculacao",
+    "equipamento": "Barra/Halter",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20", "carga": "30-50% 1RM" },
+      "moderado": { "repeticoes": "12-15", "carga": "50-65% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "65-80% 1RM" }
+    }
+  },
+  {
+    "nome": "Tríceps testa",
+    "grupo": "superiores",
+    "subgrupo": ["tríceps"],
+    "categoria": "musculacao",
+    "equipamento": "Barra/Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20", "carga": "30-50% 1RM" },
+      "moderado": { "repeticoes": "12-15", "carga": "50-65% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "65-80% 1RM" }
+    }
+  },
+  {
+    "nome": "Tríceps coice",
+    "grupo": "superiores",
+    "subgrupo": ["tríceps"],
+    "categoria": "musculacao",
+    "equipamento": "Halteres",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20", "carga": "30-50% 1RM" },
+      "moderado": { "repeticoes": "12-15", "carga": "50-65% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "65-80% 1RM" }
+    }
+  },
+  {
+    "nome": "Agachamento",
+    "grupo": "inferiores",
+    "subgrupo": ["quadríceps", "glúteos", "posterior de coxa"],
+    "categoria": "musculacao",
+    "equipamento": "Barra",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "8-10", "carga": "60-75% 1RM" },
+      "pesado": { "repeticoes": "4-6", "carga": "75-90% 1RM" }
+    }
+  },
+  {
+    "nome": "Afundo",
+    "grupo": "inferiores",
+    "subgrupo": ["quadríceps", "glúteos"],
+    "categoria": "musculacao",
+    "equipamento": "Halteres/Barra",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "10-12", "carga": "60-75% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "75-85% 1RM" }
+    }
+  },
+  {
+    "nome": "Levantamento terra",
+    "grupo": "inferiores",
+    "subgrupo": ["posterior de coxa", "glúteos", "lombar"],
+    "categoria": "musculacao",
+    "equipamento": "Barra",
+    "modalidades": {
+      "leve": { "repeticoes": "8-10", "carga": "50-65% 1RM" },
+      "moderado": { "repeticoes": "6-8", "carga": "65-80% 1RM" },
+      "pesado": { "repeticoes": "3-5", "carga": "80-95% 1RM" }
+    }
+  },
+  {
+    "nome": "Stiff (terra romeno)",
+    "grupo": "inferiores",
+    "subgrupo": ["posterior de coxa", "glúteos"],
+    "categoria": "musculacao",
+    "equipamento": "Barra",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "40-60% 1RM" },
+      "moderado": { "repeticoes": "10-12", "carga": "60-75% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "75-85% 1RM" }
+    }
+  },
+  {
+    "nome": "Elevação de panturrilha",
+    "grupo": "inferiores",
+    "subgrupo": ["panturrilha"],
+    "categoria": "musculacao",
+    "equipamento": "Peso corporal/Barra",
+    "modalidades": {
+      "leve": { "repeticoes": "20-25", "carga": "Peso corporal" },
+      "moderado": { "repeticoes": "15-20", "carga": "50-70% 1RM" },
+      "pesado": { "repeticoes": "12-15", "carga": "70-85% 1RM" }
+    }
+  },
+  {
+    "nome": "Russian twist",
+    "grupo": "core",
+    "subgrupo": ["abdômen oblíquo", "abdômen"],
+    "categoria": "musculacao",
+    "equipamento": "Anilha/Halter",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20", "carga": "Peso corporal" },
+      "moderado": { "repeticoes": "20-25", "carga": "5-10kg" },
+      "pesado": { "repeticoes": "25-30", "carga": "10-15kg" }
+    }
+  },
+  {
+    "nome": "Elevação de pernas",
+    "grupo": "core",
+    "subgrupo": ["abdômen", "quadril"],
+    "categoria": "musculacao",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15" },
+      "moderado": { "repeticoes": "15-20" },
+      "pesado": { "repeticoes": "20-25" }
+    }
+  },
+  {
+    "nome": "Good morning",
+    "grupo": "core",
+    "subgrupo": ["lombar", "glúteos", "posterior de coxa"],
+    "categoria": "musculacao",
+    "equipamento": "Barra",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15", "carga": "30-50% 1RM" },
+      "moderado": { "repeticoes": "10-12", "carga": "50-70% 1RM" },
+      "pesado": { "repeticoes": "8-10", "carga": "70-85% 1RM" }
+    }
+  },
+  {
+    "nome": "Flexão de braços",
+    "grupo": "superiores",
+    "subgrupo": ["peito", "tríceps", "ombros"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "8-12" },
+      "moderado": { "repeticoes": "12-20" },
+      "pesado": { "repeticoes": "20-30" }
+    }
+  },
+  {
+    "nome": "Flexão diamante",
+    "grupo": "superiores",
+    "subgrupo": ["tríceps", "peito"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "5-8" },
+      "moderado": { "repeticoes": "8-15" },
+      "pesado": { "repeticoes": "15-25" }
+    }
+  },
+  {
+    "nome": "Flexão declinada",
+    "grupo": "superiores",
+    "subgrupo": ["peito", "tríceps", "ombros"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "6-10" },
+      "moderado": { "repeticoes": "10-15" },
+      "pesado": { "repeticoes": "15-20" }
+    }
+  },
+  {
+    "nome": "Flexão arqueiro",
+    "grupo": "superiores",
+    "subgrupo": ["peito", "tríceps", "ombros"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "3-5" },
+      "moderado": { "repeticoes": "5-8" },
+      "pesado": { "repeticoes": "8-12" }
+    }
+  },
+  {
+    "nome": "Barra fixa",
+    "grupo": "superiores",
+    "subgrupo": ["costas", "bíceps"],
+    "categoria": "calistenia",
+    "equipamento": "Barra",
+    "modalidades": {
+      "leve": { "repeticoes": "3-5" },
+      "moderado": { "repeticoes": "5-8" },
+      "pesado": { "repeticoes": "8-12" }
+    }
+  },
+  {
+    "nome": "Australian pull-up",
+    "grupo": "superiores",
+    "subgrupo": ["costas", "bíceps"],
+    "categoria": "calistenia",
+    "equipamento": "Mesa/Barra baixa",
+    "modalidades": {
+      "leve": { "repeticoes": "8-12" },
+      "moderado": { "repeticoes": "12-15" },
+      "pesado": { "repeticoes": "15-20" }
+    }
+  },
+  {
+    "nome": "Superman",
+    "grupo": "superiores",
+    "subgrupo": ["costas", "lombar"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "tempo": "20-30s" },
+      "moderado": { "tempo": "30-45s" },
+      "pesado": { "tempo": "45-60s" }
+    }
+  },
+  {
+    "nome": "Pike push-up",
+    "grupo": "superiores",
+    "subgrupo": ["ombros", "tríceps"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "5-8" },
+      "moderado": { "repeticoes": "8-12" },
+      "pesado": { "repeticoes": "12-15" }
+    }
+  },
+  {
+    "nome": "Handstand push-up",
+    "grupo": "superiores",
+    "subgrupo": ["ombros", "tríceps"],
+    "categoria": "calistenia",
+    "equipamento": "Parede",
+    "modalidades": {
+      "leve": { "repeticoes": "3-5" },
+      "moderado": { "repeticoes": "5-8" },
+      "pesado": { "repeticoes": "8-12" }
+    }
+  },
+  {
+    "nome": "Elevação lateral em prancha",
+    "grupo": "superiores",
+    "subgrupo": ["ombros", "core"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "8-12" },
+      "moderado": { "repeticoes": "12-15" },
+      "pesado": { "repeticoes": "15-20" }
+    }
+  },
+  {
+    "nome": "Flexão fechada",
+    "grupo": "superiores",
+    "subgrupo": ["tríceps", "peito"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "8-12" },
+      "moderado": { "repeticoes": "12-15" },
+      "pesado": { "repeticoes": "15-20" }
+    }
+  },
+  {
+    "nome": "Mergulho em cadeira",
+    "grupo": "superiores",
+    "subgrupo": ["tríceps", "peito"],
+    "categoria": "calistenia",
+    "equipamento": "Cadeira/Banco",
+    "modalidades": {
+      "leve": { "repeticoes": "8-12" },
+      "moderado": { "repeticoes": "12-15" },
+      "pesado": { "repeticoes": "15-20" }
+    }
+  },
+  {
+    "nome": "Chin-up",
+    "grupo": "superiores",
+    "subgrupo": ["bíceps", "costas"],
+    "categoria": "calistenia",
+    "equipamento": "Barra",
+    "modalidades": {
+      "leve": { "repeticoes": "3-5" },
+      "moderado": { "repeticoes": "5-8" },
+      "pesado": { "repeticoes": "8-12" }
+    }
+  },
+  {
+    "nome": "Afundo",
+    "grupo": "inferiores",
+    "subgrupo": ["quadríceps", "glúteos"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15" },
+      "moderado": { "repeticoes": "15-20" },
+      "pesado": { "repeticoes": "20-25" }
+    }
+  },
+  {
+    "nome": "Agachamento livre",
+    "grupo": "inferiores",
+    "subgrupo": ["quadríceps", "glúteos"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20" },
+      "moderado": { "repeticoes": "20-25" },
+      "pesado": { "repeticoes": "25-30" }
+    }
+  },
+  {
+    "nome": "Agachamento búlgaro",
+    "grupo": "inferiores",
+    "subgrupo": ["quadríceps", "glúteos"],
+    "categoria": "calistenia",
+    "equipamento": "Cadeira",
+    "modalidades": {
+      "leve": { "repeticoes": "10-12" },
+      "moderado": { "repeticoes": "12-15" },
+      "pesado": { "repeticoes": "15-20" }
+    }
+  },
+  {
+    "nome": "Agachamento pistol",
+    "grupo": "inferiores",
+    "subgrupo": ["quadríceps", "glúteos"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "3-5" },
+      "moderado": { "repeticoes": "5-8" },
+      "pesado": { "repeticoes": "8-12" }
+    }
+  },
+  {
+    "nome": "Ponte de glúteo",
+    "grupo": "inferiores",
+    "subgrupo": ["glúteos", "posterior de coxa"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20" },
+      "moderado": { "repeticoes": "20-25" },
+      "pesado": { "repeticoes": "25-30" }
+    }
+  },
+  {
+    "nome": "Avanço (lunge)",
+    "grupo": "inferiores",
+    "subgrupo": ["quadríceps", "glúteos"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "10-12" },
+      "moderado": { "repeticoes": "12-15" },
+      "pesado": { "repeticoes": "15-20" }
+    }
+  },
+  {
+    "nome": "Panturrilha em pé",
+    "grupo": "inferiores",
+    "subgrupo": ["panturrilha"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "20-25" },
+      "moderado": { "repeticoes": "25-30" },
+      "pesado": { "repeticoes": "30-40" }
+    }
+  },
+  {
+    "nome": "Panturrilha unilateral",
+    "grupo": "inferiores",
+    "subgrupo": ["panturrilha"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20" },
+      "moderado": { "repeticoes": "20-25" },
+      "pesado": { "repeticoes": "25-30" }
+    }
+  },
+  {
+    "nome": "Prancha frontal",
+    "grupo": "core",
+    "subgrupo": ["abdômen", "lombar", "ombros"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "tempo": "20-30s" },
+      "moderado": { "tempo": "30-45s" },
+      "pesado": { "tempo": "60s+" }
+    }
+  },
+  {
+    "nome": "Elevação de perna",
+    "grupo": "core",
+    "subgrupo": ["abdômen", "quadril"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15" },
+      "moderado": { "repeticoes": "15-20" },
+      "pesado": { "repeticoes": "20-25" }
+    }
+  },
+  {
+    "nome": "Prancha lateral",
+    "grupo": "core",
+    "subgrupo": ["abdômen oblíquo", "lombar"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "tempo": "20-30s" },
+      "moderado": { "tempo": "30-45s" },
+      "pesado": { "tempo": "45-60s" }
+    }
+  },
+  {
+    "nome": "Mountain climbers",
+    "grupo": "core",
+    "subgrupo": ["abdômen", "quadríceps", "ombros"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "20-30" },
+      "moderado": { "repeticoes": "30-40" },
+      "pesado": { "repeticoes": "40-50" }
+    }
+  },
+  {
+    "nome": "Abdominal bicicleta",
+    "grupo": "core",
+    "subgrupo": ["abdômen oblíquo", "abdômen"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "15-20" },
+      "moderado": { "repeticoes": "20-25" },
+      "pesado": { "repeticoes": "25-30" }
+    }
+  },
+  {
+    "nome": "Abdominal infra",
+    "grupo": "core",
+    "subgrupo": ["abdômen"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "repeticoes": "12-15" },
+      "moderado": { "repeticoes": "15-20" },
+      "pesado": { "repeticoes": "20-25" }
+    }
+  },
+  {
+    "nome": "Hollow body hold",
+    "grupo": "core",
+    "subgrupo": ["abdômen", "lombar"],
+    "categoria": "calistenia",
+    "equipamento": "Peso corporal",
+    "modalidades": {
+      "leve": { "tempo": "20-30s" },
+      "moderado": { "tempo": "30-45s" },
+      "pesado": { "tempo": "45-60s" }
+    }
+  },
+  {
+    "nome": "L-sit",
+    "grupo": "core",
+    "subgrupo": ["abdômen", "quadríceps", "tríceps"],
+    "categoria": "calistenia",
+    "equipamento": "Cadeiras/Chão",
+    "modalidades": {
+      "leve": { "tempo": "15-20s" },
+      "moderado": { "tempo": "20-30s" },
+      "pesado": { "tempo": "30-45s" }
+    }
+  }
+]

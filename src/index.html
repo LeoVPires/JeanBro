@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timers e Alarmes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="headder"></div>
+    <div class="container">
+      <h1>Timers Personalizados</h1>
+      <div class="timers-display" id="display">00:00</div>
+
+      <div class="buttons-row">
+        <button class="timer" data-time="5">5 Segundos</button>
+        <button class="timer" data-time="10">10 Segundos</button>
+        <button class="timer" data-time="15">15 Segundos</button>
+      </div>
+    </div>
+    <div class="footer"></div>
+
+    <audio id="alarmSound" src="..\data\countdown.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
