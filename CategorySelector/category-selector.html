@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="headder"></div>
+    <div class="container">
+      <h1>Selecione seus Exercícios</h1>
+
+      <form id="selectionForm">
+        <div class="category-group">
+          <h3>Tipo de Treino</h3>
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="calisthenics"
+                name="workoutType"
+                value="calisthenics"
+              />
+              <label for="calisthenics">Calistenia</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="crossfit"
+                name="workoutType"
+                value="crossfit"
+                disabled
+              />
+              <label for="crossfit">Crossfit</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="workout-home"
+                name="workoutType"
+                value="workout-home"
+              />
+              <label for="workout-home">Musculação (Casa)</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="workout-gym"
+                name="workoutType"
+                value="workout-gym"
+                disabled
+              />
+              <label for="workout-gym">Musculação (Academia)</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-group">
+          <h3>Grupos Musculares</h3>
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="superiores"
+                name="muscleGroup"
+                value="superiores"
+              />
+              <label for="superiores">Superiores</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="core"
+                name="muscleGroup"
+                value="core"
+              />
+              <label for="core">Core</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="inferiores"
+                name="muscleGroup"
+                value="inferiores"
+              />
+              <label for="inferiores">Inferiores</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="button" id="submitBtn" disabled>Ver Exercícios</button>
+        </div>
+      </form>
+    </div>
+    <script src="categorySelector.js"></script>
+  </body>
+</html>
