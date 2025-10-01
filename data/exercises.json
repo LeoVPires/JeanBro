@@ -1,10 +1,13 @@
 [
   {
+    "id": 1,
     "name": "Supino reto",
+    "description": "Exercício básico para peitoral realizado deitado em banco plano com barra ou halteres",
     "muscleGroup": "superiores",
     "muscleFocus": ["peito", "tríceps", "ombros"],
     "category": "workout-home",
     "equipment": "Barra/Halteres",
+    "image": "supino-reto.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "8-10", "load": "60-75% 1RM" },
@@ -12,11 +15,14 @@
     }
   },
   {
+    "id": 2,
     "name": "Supino inclinado",
+    "description": "Exercício para peitoral superior realizado em banco inclinado",
     "muscleGroup": "superiores",
     "muscleFocus": ["peito", "tríceps", "ombros"],
     "category": "workout-home",
     "equipment": "Barra/Halteres",
+    "image": "supino-inclinado.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "8-10", "load": "60-75% 1RM" },
@@ -24,11 +30,14 @@
     }
   },
   {
+    "id": 3,
     "name": "Crucifixo",
+    "description": "Exercício de isolamento para peitoral com halteres",
     "muscleGroup": "superiores",
     "muscleFocus": ["peito", "ombros"],
     "category": "workout-home",
     "equipment": "Halteres",
+    "image": "crucifixo.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "10-12", "load": "60-70% 1RM" },
@@ -36,11 +45,14 @@
     }
   },
   {
+    "id": 4,
     "name": "Remada curvada",
+    "description": "Exercício para costas realizado com tronco inclinado para frente",
     "muscleGroup": "superiores",
     "muscleFocus": ["costas", "bíceps", "ombros"],
     "category": "workout-home",
     "equipment": "Barra",
+    "image": "remada-curvada.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "8-10", "load": "60-75% 1RM" },
@@ -48,11 +60,14 @@
     }
   },
   {
+    "id": 5,
     "name": "Remada unilateral",
+    "description": "Exercício para costas realizado com um braço de cada vez",
     "muscleGroup": "superiores",
     "muscleFocus": ["costas", "bíceps"],
     "category": "workout-home",
     "equipment": "Halter",
+    "image": "remada-unilateral.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "8-10", "load": "60-75% 1RM" },
@@ -60,11 +75,14 @@
     }
   },
   {
+    "id": 6,
     "name": "Pullover",
+    "description": "Exercício para peitoral e costas com movimento sobre a cabeça",
     "muscleGroup": "superiores",
     "muscleFocus": ["costas", "peito"],
     "category": "workout-home",
     "equipment": "Barra/Halter",
+    "image": "pullover.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "10-12", "load": "60-70% 1RM" },
@@ -72,11 +90,14 @@
     }
   },
   {
+    "id": 7,
     "name": "Desenvolvimento militar",
+    "description": "Exercício para ombros realizado em pé ou sentado com peso acima da cabeça",
     "muscleGroup": "superiores",
     "muscleFocus": ["ombros", "tríceps"],
     "category": "workout-home",
     "equipment": "Barra/Halteres",
+    "image": "desenvolvimento-militar.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "8-10", "load": "60-75% 1RM" },
@@ -84,11 +105,14 @@
     }
   },
   {
+    "id": 8,
     "name": "Elevação lateral",
+    "description": "Exercício para deltóides laterais com halteres",
     "muscleGroup": "superiores",
     "muscleFocus": ["ombros"],
     "category": "workout-home",
     "equipment": "Halteres",
+    "image": "elevacao-lateral.gif",
     "level": {
       "light": { "reps": "15-20", "load": "30-50% 1RM" },
       "moderate": { "reps": "12-15", "load": "50-65% 1RM" },
@@ -96,11 +120,14 @@
     }
   },
   {
+    "id": 9,
     "name": "Elevação frontal",
+    "description": "Exercício para deltóides anteriores com halteres",
     "muscleGroup": "superiores",
     "muscleFocus": ["ombros"],
     "category": "workout-home",
     "equipment": "Halteres",
+    "image": "elevacao-frontal.gif",
     "level": {
       "light": { "reps": "15-20", "load": "30-50% 1RM" },
       "moderate": { "reps": "12-15", "load": "50-65% 1RM" },
@@ -108,11 +135,14 @@
     }
   },
   {
+    "id": 10,
     "name": "Rosca direta",
+    "description": "Exercício básico para bíceps com barra ou halteres",
     "muscleGroup": "superiores",
     "muscleFocus": ["bíceps"],
     "category": "workout-home",
     "equipment": "Barra/Halteres",
+    "image": "rosca-direta.gif",
     "level": {
       "light": { "reps": "15-20", "load": "30-50% 1RM" },
       "moderate": { "reps": "12-15", "load": "50-65% 1RM" },
@@ -120,11 +150,14 @@
     }
   },
   {
+    "id": 11,
     "name": "Rosca alternada",
+    "description": "Exercício para bíceps realizando movimento alternado com halteres",
     "muscleGroup": "superiores",
     "muscleFocus": ["bíceps"],
     "category": "workout-home",
     "equipment": "Halteres",
+    "image": "rosca-alternada.gif",
     "level": {
       "light": { "reps": "15-20", "load": "30-50% 1RM" },
       "moderate": { "reps": "12-15", "load": "50-65% 1RM" },
@@ -132,11 +165,14 @@
     }
   },
   {
+    "id": 12,
     "name": "Tríceps francês",
+    "description": "Exercício para tríceps realizado deitado com movimento atrás da cabeça",
     "muscleGroup": "superiores",
     "muscleFocus": ["tríceps"],
     "category": "workout-home",
     "equipment": "Barra/Halter",
+    "image": "triceps-frances.gif",
     "level": {
       "light": { "reps": "15-20", "load": "30-50% 1RM" },
       "moderate": { "reps": "12-15", "load": "50-65% 1RM" },
@@ -144,11 +180,14 @@
     }
   },
   {
+    "id": 13,
     "name": "Tríceps testa",
+    "description": "Exercício para tríceps com barra movendo em direção à testa",
     "muscleGroup": "superiores",
     "muscleFocus": ["tríceps"],
     "category": "workout-home",
     "equipment": "Barra/Halteres",
+    "image": "triceps-testa.gif",
     "level": {
       "light": { "reps": "15-20", "load": "30-50% 1RM" },
       "moderate": { "reps": "12-15", "load": "50-65% 1RM" },
@@ -156,11 +195,14 @@
     }
   },
   {
+    "id": 14,
     "name": "Tríceps coice",
+    "description": "Exercício para tríceps com halteres e tronco inclinado",
     "muscleGroup": "superiores",
     "muscleFocus": ["tríceps"],
     "category": "workout-home",
     "equipment": "Halteres",
+    "image": "triceps-coice.gif",
     "level": {
       "light": { "reps": "15-20", "load": "30-50% 1RM" },
       "moderate": { "reps": "12-15", "load": "50-65% 1RM" },
@@ -168,11 +210,14 @@
     }
   },
   {
+    "id": 15,
     "name": "Agachamento",
+    "description": "Exercício fundamental para pernas e glúteos",
     "muscleGroup": "inferiores",
     "muscleFocus": ["quadríceps", "glúteos", "posterior de coxa"],
     "category": "workout-home",
     "equipment": "Barra",
+    "image": "agachamento.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "8-10", "load": "60-75% 1RM" },
@@ -180,11 +225,14 @@
     }
   },
   {
+    "id": 16,
     "name": "Afundo",
+    "description": "Exercício unilateral para pernas e glúteos",
     "muscleGroup": "inferiores",
     "muscleFocus": ["quadríceps", "glúteos"],
     "category": "workout-home",
     "equipment": "Halteres/Barra",
+    "image": "afundo.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "10-12", "load": "60-75% 1RM" },
@@ -192,11 +240,14 @@
     }
   },
   {
+    "id": 17,
     "name": "Levantamento terra",
+    "description": "Exercício composto para cadeia posterior e força geral",
     "muscleGroup": "inferiores",
     "muscleFocus": ["posterior de coxa", "glúteos", "lombar"],
     "category": "workout-home",
     "equipment": "Barra",
+    "image": "levantamento-terra.gif",
     "level": {
       "light": { "reps": "8-10", "load": "50-65% 1RM" },
       "moderate": { "reps": "6-8", "load": "65-80% 1RM" },
@@ -204,11 +255,14 @@
     }
   },
   {
+    "id": 18,
     "name": "Stiff (terra romeno)",
+    "description": "Exercício para posterior de coxa e glúteos com pernas semi-flexionadas",
     "muscleGroup": "inferiores",
     "muscleFocus": ["posterior de coxa", "glúteos"],
     "category": "workout-home",
     "equipment": "Barra",
+    "image": "stiff-terra-romeno.gif",
     "level": {
       "light": { "reps": "12-15", "load": "40-60% 1RM" },
       "moderate": { "reps": "10-12", "load": "60-75% 1RM" },
@@ -216,11 +270,14 @@
     }
   },
   {
+    "id": 19,
     "name": "Elevação de panturrilha",
+    "description": "Exercício para panturrilhas em pé",
     "muscleGroup": "inferiores",
     "muscleFocus": ["panturrilha"],
     "category": "workout-home",
     "equipment": "Peso corporal/Barra",
+    "image": "elevacao-de-panturrilha.gif",
     "level": {
       "light": { "reps": "20-25", "load": "Peso corporal" },
       "moderate": { "reps": "15-20", "load": "50-70% 1RM" },
@@ -228,11 +285,14 @@
     }
   },
   {
+    "id": 20,
     "name": "Russian twist",
+    "description": "Exercício para oblíquos e core com rotação de tronco",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen oblíquo", "abdômen"],
     "category": "workout-home",
     "equipment": "Anilha/Halter",
+    "image": "russian-twist.gif",
     "level": {
       "light": { "reps": "15-20", "load": "Peso corporal" },
       "moderate": { "reps": "20-25", "load": "5-10kg" },
@@ -240,11 +300,14 @@
     }
   },
   {
+    "id": 21,
     "name": "Elevação de pernas",
+    "description": "Exercício para abdômen inferior",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen", "quadril"],
     "category": "workout-home",
     "equipment": "Peso corporal",
+    "image": "elevacao-de-pernas.gif",
     "level": {
       "light": { "reps": "12-15" },
       "moderate": { "reps": "15-20" },
@@ -252,11 +315,14 @@
     }
   },
   {
+    "id": 22,
     "name": "Good morning",
+    "description": "Exercício para lombar, glúteos e posterior de coxa",
     "muscleGroup": "core",
     "muscleFocus": ["lombar", "glúteos", "posterior de coxa"],
     "category": "workout-home",
     "equipment": "Barra",
+    "image": "good-morning.gif",
     "level": {
       "light": { "reps": "12-15", "load": "30-50% 1RM" },
       "moderate": { "reps": "10-12", "load": "50-70% 1RM" },
@@ -264,11 +330,14 @@
     }
   },
   {
+    "id": 23,
     "name": "Flexão de braços",
+    "description": "Exercício básico de calistenia para peitoral, tríceps e ombros",
     "muscleGroup": "superiores",
     "muscleFocus": ["peito", "tríceps", "ombros"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "flexao-de-bracos.gif",
     "level": {
       "light": { "reps": "8-12" },
       "moderate": { "reps": "12-20" },
@@ -276,11 +345,14 @@
     }
   },
   {
+    "id": 24,
     "name": "Flexão diamante",
+    "description": "Flexão com mãos próximas para maior ênfase no tríceps",
     "muscleGroup": "superiores",
     "muscleFocus": ["tríceps", "peito"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "flexao-diamante.gif",
     "level": {
       "light": { "reps": "5-8" },
       "moderate": { "reps": "8-15" },
@@ -288,11 +360,14 @@
     }
   },
   {
+    "id": 25,
     "name": "Flexão declinada",
+    "description": "Flexão com pés elevados para maior ênfase no peitoral superior",
     "muscleGroup": "superiores",
     "muscleFocus": ["peito", "tríceps", "ombros"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "flexao-declinada.gif",
     "level": {
       "light": { "reps": "6-10" },
       "moderate": { "reps": "10-15" },
@@ -300,11 +375,14 @@
     }
   },
   {
+    "id": 26,
     "name": "Flexão arqueiro",
+    "description": "Flexão avançada com maior amplitude de movimento",
     "muscleGroup": "superiores",
     "muscleFocus": ["peito", "tríceps", "ombros"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "flexao-arqueiro.gif",
     "level": {
       "light": { "reps": "3-5" },
       "moderate": { "reps": "5-8" },
@@ -312,11 +390,14 @@
     }
   },
   {
+    "id": 27,
     "name": "Barra fixa",
+    "description": "Exercício fundamental para costas e bíceps",
     "muscleGroup": "superiores",
     "muscleFocus": ["costas", "bíceps"],
     "category": "calisthenics",
     "equipment": "Barra",
+    "image": "barra-fixa.gif",
     "level": {
       "light": { "reps": "3-5" },
       "moderate": { "reps": "5-8" },
@@ -324,11 +405,14 @@
     }
   },
   {
+    "id": 28,
     "name": "Australian pull-up",
+    "description": "Versão de barra fixa com corpo inclinado, mais fácil para iniciantes",
     "muscleGroup": "superiores",
     "muscleFocus": ["costas", "bíceps"],
     "category": "calisthenics",
     "equipment": "Mesa/Barra baixa",
+    "image": "australian-pull-up.gif",
     "level": {
       "light": { "reps": "8-12" },
       "moderate": { "reps": "12-15" },
@@ -336,11 +420,14 @@
     }
   },
   {
+    "id": 29,
     "name": "Superman",
+    "description": "Exercício isométrico para lombar e costas",
     "muscleGroup": "superiores",
     "muscleFocus": ["costas", "lombar"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "superman.gif",
     "level": {
       "light": { "time": "20-30s" },
       "moderate": { "time": "30-45s" },
@@ -348,11 +435,14 @@
     }
   },
   {
+    "id": 30,
     "name": "Pike push-up",
+    "description": "Flexão em posição de pique para desenvolvimento de ombros",
     "muscleGroup": "superiores",
     "muscleFocus": ["ombros", "tríceps"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "pike-push-up.gif",
     "level": {
       "light": { "reps": "5-8" },
       "moderate": { "reps": "8-12" },
@@ -360,11 +450,14 @@
     }
   },
   {
+    "id": 31,
     "name": "Handstand push-up",
+    "description": "Flexão em parada de mãos, exercício avançado para ombros",
     "muscleGroup": "superiores",
     "muscleFocus": ["ombros", "tríceps"],
     "category": "calisthenics",
     "equipment": "Parede",
+    "image": "handstand-push-up.gif",
     "level": {
       "light": { "reps": "3-5" },
       "moderate": { "reps": "5-8" },
@@ -372,11 +465,14 @@
     }
   },
   {
+    "id": 32,
     "name": "Elevação lateral do quadril em prancha",
+    "description": "Exercício para core com movimento lateral do quadril",
     "muscleGroup": "core",
     "muscleFocus": ["core"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "elevacao-lateral-do-quadril-em-prancha.gif",
     "level": {
       "light": { "reps": "8-12" },
       "moderate": { "reps": "12-15" },
@@ -384,11 +480,14 @@
     }
   },
   {
+    "id": 33,
     "name": "Flexão fechada",
+    "description": "Flexão com mãos próximas para ênfase no tríceps",
     "muscleGroup": "superiores",
     "muscleFocus": ["tríceps", "peito"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "flexao-fechada.gif",
     "level": {
       "light": { "reps": "8-12" },
       "moderate": { "reps": "12-15" },
@@ -396,11 +495,14 @@
     }
   },
   {
+    "id": 34,
     "name": "Mergulho em cadeira",
+    "description": "Exercício para tríceps utilizando cadeira ou banco",
     "muscleGroup": "superiores",
     "muscleFocus": ["tríceps", "peito"],
     "category": "calisthenics",
     "equipment": "Cadeira/Banco",
+    "image": "mergulho-em-cadeira.gif",
     "level": {
       "light": { "reps": "8-12" },
       "moderate": { "reps": "12-15" },
@@ -408,11 +510,14 @@
     }
   },
   {
+    "id": 35,
     "name": "Chin-up",
+    "description": "Barra fixa com pegada supinada para ênfase nos bíceps",
     "muscleGroup": "superiores",
     "muscleFocus": ["bíceps", "costas"],
     "category": "calisthenics",
     "equipment": "Barra",
+    "image": "chin-up.gif",
     "level": {
       "light": { "reps": "3-5" },
       "moderate": { "reps": "5-8" },
@@ -420,11 +525,14 @@
     }
   },
   {
+    "id": 36,
     "name": "Afundo",
+    "description": "Exercício unilateral para pernas e glúteos usando peso corporal",
     "muscleGroup": "inferiores",
     "muscleFocus": ["quadríceps", "glúteos"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "afundo.gif",
     "level": {
       "light": { "reps": "12-15" },
       "moderate": { "reps": "15-20" },
@@ -432,11 +540,14 @@
     }
   },
   {
+    "id": 37,
     "name": "Agachamento livre",
+    "description": "Agachamento básico usando apenas peso corporal",
     "muscleGroup": "inferiores",
     "muscleFocus": ["quadríceps", "glúteos"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "agachamento-livre.gif",
     "level": {
       "light": { "reps": "15-20" },
       "moderate": { "reps": "20-25" },
@@ -444,11 +555,14 @@
     }
   },
   {
+    "id": 38,
     "name": "Agachamento búlgaro",
+    "description": "Agachamento unilateral com pé traseiro apoiado em elevação",
     "muscleGroup": "inferiores",
     "muscleFocus": ["quadríceps", "glúteos"],
     "category": "calisthenics",
     "equipment": "Cadeira",
+    "image": "agachamento-bulgaro.gif",
     "level": {
       "light": { "reps": "10-12" },
       "moderate": { "reps": "12-15" },
@@ -456,11 +570,14 @@
     }
   },
   {
+    "id": 39,
     "name": "Agachamento pistol",
+    "description": "Agachamento unilateral avançado em uma perna só",
     "muscleGroup": "inferiores",
     "muscleFocus": ["quadríceps", "glúteos"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "agachamento-pistol.gif",
     "level": {
       "light": { "reps": "3-5" },
       "moderate": { "reps": "5-8" },
@@ -468,11 +585,14 @@
     }
   },
   {
+    "id": 40,
     "name": "Ponte de glúteo",
+    "description": "Exercício para glúteos e posterior de coxa no solo",
     "muscleGroup": "inferiores",
     "muscleFocus": ["glúteos", "posterior de coxa"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "ponte-de-gluteo.gif",
     "level": {
       "light": { "reps": "15-20" },
       "moderate": { "reps": "20-25" },
@@ -480,11 +600,14 @@
     }
   },
   {
+    "id": 41,
     "name": "Avanço (lunge)",
+    "description": "Exercício dinâmico para pernas e glúteos com passo à frente",
     "muscleGroup": "inferiores",
     "muscleFocus": ["quadríceps", "glúteos"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "avanco-lunge.gif",
     "level": {
       "light": { "reps": "10-12" },
       "moderate": { "reps": "12-15" },
@@ -492,11 +615,14 @@
     }
   },
   {
+    "id": 42,
     "name": "Panturrilha em pé",
+    "description": "Exercício para panturrilhas usando peso corporal",
     "muscleGroup": "inferiores",
     "muscleFocus": ["panturrilha"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "panturrilha-em-pe.gif",
     "level": {
       "light": { "reps": "20-25" },
       "moderate": { "reps": "25-30" },
@@ -504,11 +630,14 @@
     }
   },
   {
+    "id": 43,
     "name": "Panturrilha unilateral",
+    "description": "Exercício para panturrilhas realizando uma perna de cada vez",
     "muscleGroup": "inferiores",
     "muscleFocus": ["panturrilha"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "panturrilha-unilateral.gif",
     "level": {
       "light": { "reps": "15-20" },
       "moderate": { "reps": "20-25" },
@@ -516,11 +645,14 @@
     }
   },
   {
+    "id": 44,
     "name": "Prancha frontal",
+    "description": "Exercício isométrico para core, abdômen e lombar",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen", "lombar", "ombros"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "prancha-frontal.gif",
     "level": {
       "light": { "time": "20-30s" },
       "moderate": { "time": "30-45s" },
@@ -528,11 +660,14 @@
     }
   },
   {
+    "id": 45,
     "name": "Elevação de perna",
+    "description": "Exercício para abdômen inferior e quadril",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen", "quadril"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "elevacao-de-perna.gif",
     "level": {
       "light": { "reps": "12-15" },
       "moderate": { "reps": "15-20" },
@@ -540,11 +675,14 @@
     }
   },
   {
+    "id": 46,
     "name": "Prancha lateral",
+    "description": "Exercício isométrico para oblíquos e core lateral",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen oblíquo", "lombar"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "prancha-lateral.gif",
     "level": {
       "light": { "time": "20-30s" },
       "moderate": { "time": "30-45s" },
@@ -552,11 +690,14 @@
     }
   },
   {
+    "id": 47,
     "name": "Mountain climbers",
+    "description": "Exercício dinâmico para core e cardio",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen", "quadríceps", "ombros"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "mountain-climbers.gif",
     "level": {
       "light": { "reps": "20-30" },
       "moderate": { "reps": "30-40" },
@@ -564,11 +705,14 @@
     }
   },
   {
+    "id": 48,
     "name": "Abdominal bicicleta",
+    "description": "Exercício para oblíquos e abdômen com movimento de pedalar",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen oblíquo", "abdômen"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "abdominal-bicicleta.gif",
     "level": {
       "light": { "reps": "15-20" },
       "moderate": { "reps": "20-25" },
@@ -576,11 +720,14 @@
     }
   },
   {
+    "id": 49,
     "name": "Abdominal infra",
+    "description": "Exercício específico para abdômen inferior",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "abdominal-infra.gif",
     "level": {
       "light": { "reps": "12-15" },
       "moderate": { "reps": "15-20" },
@@ -588,11 +735,14 @@
     }
   },
   {
+    "id": 50,
     "name": "Hollow body hold",
+    "description": "Exercício isométrico avançado para core",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen", "lombar"],
     "category": "calisthenics",
     "equipment": "Peso corporal",
+    "image": "hollow-body-hold.gif",
     "level": {
       "light": { "time": "20-30s" },
       "moderate": { "time": "30-45s" },
@@ -600,11 +750,14 @@
     }
   },
   {
+    "id": 51,
     "name": "L-sit",
+    "description": "Exercício avançado de calistenia para core e força de tríceps",
     "muscleGroup": "core",
     "muscleFocus": ["abdômen", "quadríceps", "tríceps"],
     "category": "calisthenics",
     "equipment": "Cadeiras/Chão",
+    "image": "l-sit.gif",
     "level": {
       "light": { "time": "15-20s" },
       "moderate": { "time": "20-30s" },

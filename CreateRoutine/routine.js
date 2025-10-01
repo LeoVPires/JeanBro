@@ -164,6 +164,8 @@ function updateLoadDisplay(exerciseId, rmValue) {
 function setupExerciseEvents(exercise) {
   const levelSelect = document.getElementById(`level-${exercise.id}`);
   const rmInput = document.getElementById(`rm-${exercise.id}`);
+  // const openModal = document.getElementById(`open-dialog-${exercise.id}`);
+  // const closeModal = document.getElementById(`close-dialog-${exercise.id}`);
 
   if (levelSelect) {
     levelSelect.addEventListener("change", function () {
@@ -239,19 +241,29 @@ function displayExercises(exercises) {
                     <p><strong>Grupo Muscular:</strong> ${
                       exercise.muscleGroup || "Não especificado"
                     }</p>
-                    ${
-                      exercise.equipment
-                        ? `<p><strong>Equipamento:</strong> ${exercise.equipment}</p>`
-                        : ""
-                    }
+                    
                     ${
                       exercise.description
                         ? `<p><strong>Descrição:</strong> ${exercise.description}</p>`
                         : ""
                     }
+                    <button class="open-dialog" data-dialog-id="dialog-${
+                      exercise.id
+                    }">v</button>
                 </div>
-                ${createLevelSelector(exercise)}
+                
             </div>
+            <dialog id="dialog-${exercise.id}" class="exercise-dialog">
+
+              <img src="${exercise.img} />
+              ${
+                exercise.equipment
+                  ? `<p><strong>Equipamento:</strong> ${exercise.equipment}</p>`
+                  : ""
+              }
+              ${createLevelSelector(exercise)}
+              <button class="close-dialog">add</button>
+            </dialog>
         `
     )
     .join("");
@@ -262,6 +274,44 @@ function displayExercises(exercises) {
   });
 }
 
+// Função de controle dos Dialog's
+document.addEventListener("click", function (event) {
+  console.log("testeeeeee");
+  // Abrir o Dialog
+  if (event.target.classList.contains("open-dialog")) {
+    const dialogId = event.target.getAttribute("data-dialog-id");
+    console.log(dialogId);
+    const targetDialog = document.getElementById(dialogId);
+
+    if (targetDialog) {
+      targetDialog.showModal(); // Abre como modal
+      console.log("tentando abrir");
+    } else {
+      console.log("nao abrir");
+    }
+  }
+
+  // Fechar o Dialog
+  if (event.target.classList.contains("close-dialog")) {
+    // Encontra o dialog ancestral mais próximo e o fecha
+    const dialog = event.target.closest("dialog");
+    if (dialog) {
+      dialog.close(); // Fecha o dialog
+    }
+  }
+});
+
+// Fechar modal clicando no backdrop (área escura atrás)
+document.addEventListener(
+  "click",
+  function (event) {
+    if (event.target.tagName === "DIALOG") {
+      event.target.close();
+    }
+  },
+  true
+); // Usando event capturing
+
 // Função principal que orquestra o carregamento
 async function init() {
   try {
@@ -269,6 +319,7 @@ async function init() {
 
     // Carregar e filtrar exercícios
     const allExercises = await loadExercises();
+
     const filteredExercises = filterExercises(
       allExercises,
       selectedWorkouts,
