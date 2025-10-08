@@ -164,8 +164,6 @@ function updateLoadDisplay(exerciseId, rmValue) {
 function setupExerciseEvents(exercise) {
   const levelSelect = document.getElementById(`level-${exercise.id}`);
   const rmInput = document.getElementById(`rm-${exercise.id}`);
-  // const openModal = document.getElementById(`open-dialog-${exercise.id}`);
-  // const closeModal = document.getElementById(`close-dialog-${exercise.id}`);
 
   if (levelSelect) {
     levelSelect.addEventListener("change", function () {
@@ -265,7 +263,12 @@ function displayExercises(exercises) {
                   : ""
               }
               ${createLevelSelector(exercise)}
-              <button class="close-dialog">add</button>
+              <div class="dialog-btns">
+                <button class="btn-add-to-list" data-exercise-id="${
+                  exercise.id
+                }">add</button>
+                <button class="close-dialog">close</button>
+              </div>
             </dialog>
         `
     )

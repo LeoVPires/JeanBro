@@ -35,7 +35,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
   localStorage.setItem("selectedMuscleGroup", JSON.stringify(selectedMuscles));
 
   // Redirecionar para página de rotina
-  window.location.href = "../CreateRoutine/routine.html";
+  window.location.href = "../../pages/exercises-selector.html";
 });
 
 // Inicializar

@@ -55,6 +55,7 @@
 }
 
 .exercise-config {
+  /* mudar isso depois */
   margin-top: 15px;
   padding: 15px;
   background: #f9f9f9;
@@ -86,6 +87,11 @@
   font-size: 14px;
   width: 100%;
   max-width: 150px;
+}
+
+.dialog-btns {
+  display: flex;
+  justify-content: space-between;
 }
 
 .level-info {
