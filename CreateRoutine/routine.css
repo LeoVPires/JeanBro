@@ -1,0 +1,108 @@
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.exercise-card {
+  background-color: lightgray;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+}
+
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* margin-bottom: 8px; */
+}
+
+.muscle-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.exercise-category {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.exercise-name {
+  text-align: center;
+  margin: 8px 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 16px;
+}
+
+.exercise-description {
+}
+
+.open-dialog {
+  border-radius: 16px;
+  width: 100%;
+  padding: 8px;
+  background-color: #4a5568;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.exercise-config {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.level-selector {
+  margin-bottom: 15px;
+}
+
+.level-selector select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.rm-input {
+  margin-bottom: 15px;
+}
+
+.rm-input input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 150px;
+}
+
+.level-info {
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.level-option {
+  display: none;
+}
+
+.level-option.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
