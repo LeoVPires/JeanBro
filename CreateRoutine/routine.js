@@ -233,29 +233,32 @@ function displayExercises(exercises) {
     .map(
       (exercise) => `
             <div class="exercise-card">
-                <div class="exercise-info">
-                    <h3>${exercise.name || "Exercício sem nome"}</h3>
-                    <p><strong>Tipo:</strong> ${
-                      exercise.category || "Não especificado"
-                    }</p>
-                    <p><strong>Grupo Muscular:</strong> ${
-                      exercise.muscleGroup || "Não especificado"
-                    }</p>
-                    
-                    ${
-                      exercise.description
-                        ? `<p><strong>Descrição:</strong> ${exercise.description}</p>`
-                        : ""
-                    }
-                    <button class="open-dialog" data-dialog-id="dialog-${
-                      exercise.id
-                    }">v</button>
-                </div>
-                
+                  <div class="exercise-header">
+                    <div class="muscle-info">
+                      <p> ${exercise.muscleGroup || "Não especificado"}</p>
+                      <p> ${exercise.muscleFocus || "Não especificado"}</p>
+                    </div>
+                    <p> ${exercise.category || "Não especificado"}</p>
+                  </div>
+                    <h3 class="exercise-name">${
+                      exercise.name || "Exercício sem nome"
+                    }</h3>
+                    <div class="exercise-description">
+                      ${
+                        exercise.description
+                          ? `<p><strong>Descrição:</strong> ${exercise.description}</p>`
+                          : ""
+                      }
+                    </div>
+                <button class="open-dialog" data-dialog-id="dialog-${
+                  exercise.id
+                }">v</button>
             </div>
             <dialog id="dialog-${exercise.id}" class="exercise-dialog">
 
-              <img src="${exercise.img} />
+              <img src="../data/GIFs/${exercise.image}" alt="${
+        exercise.name
+      }" width="150px"/>
               ${
                 exercise.equipment
                   ? `<p><strong>Equipamento:</strong> ${exercise.equipment}</p>`
@@ -276,18 +279,13 @@ function displayExercises(exercises) {
 
 // Função de controle dos Dialog's
 document.addEventListener("click", function (event) {
-  console.log("testeeeeee");
   // Abrir o Dialog
   if (event.target.classList.contains("open-dialog")) {
     const dialogId = event.target.getAttribute("data-dialog-id");
-    console.log(dialogId);
     const targetDialog = document.getElementById(dialogId);
 
     if (targetDialog) {
       targetDialog.showModal(); // Abre como modal
-      console.log("tentando abrir");
-    } else {
-      console.log("nao abrir");
     }
   }
 
