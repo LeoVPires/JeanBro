@@ -7,8 +7,11 @@
     <title>Exercícios Selecionados</title>
   </head>
   <body>
+    <div class="header">
+      <button id="back-btn" onclick="window.history.back()">← Voltar</button>
+      <button id="next-btn">Próximo →</button>
+    </div>
     <div class="container">
-      <button class="back-btn" onclick="window.history.back()">← Voltar</button>
       <h1>Exercícios Encontrados</h1>
 
       <div class="filters">
@@ -20,7 +23,6 @@
         <!-- exercícios carregados aqui -->
       </div>
     </div>
-    <button id="next-btn"></button>
 
     <script type="module" src="../js/shared/idbManager.js"></script>
     <script type="module" src="../js/shared/stateManager.js"></script>

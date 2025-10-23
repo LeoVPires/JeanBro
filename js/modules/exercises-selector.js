@@ -1,5 +1,9 @@
+import { stateManager } from "../shared/stateManager.js";
+
 let exercisesData = [];
 let currentSelections = {};
+let exercisesMap = new Map();
+let selectedExercises = [];
 
 // Carregar seleções do localStorage
 function loadSelections() {
@@ -229,10 +233,14 @@ function displayExercises(exercises) {
     return;
   }
 
-  container.innerHTML = exercises
-    .map(
-      (exercise) => `
-            <div class="exercise-card">
+  container.innerHTML = "";
+  exercises.map((exercise) => {
+    const card = document.createElement("div");
+    card.classList.add("exercise-card");
+    card.dataset.id = exercise.id;
+    const isSelected = selectedExercises.some((sel) => sel.id === exercise.id);
+    card.innerHTML = `
+            
                   <div class="exercise-header">
                     <div class="muscle-info">
                       <p> ${exercise.muscleGroup || "Não especificado"}</p>
@@ -253,12 +261,12 @@ function displayExercises(exercises) {
                 <button class="open-dialog" data-dialog-id="dialog-${
                   exercise.id
                 }">v</button>
-            </div>
+            
             <dialog id="dialog-${exercise.id}" class="exercise-dialog">
 
               <img src="../data/GIFs/${exercise.image}" alt="${
-        exercise.name
-      }" width="150px"/>
+      exercise.name
+    }" width="150px"/>
               ${
                 exercise.equipment
                   ? `<p><strong>Equipamento:</strong> ${exercise.equipment}</p>`
@@ -266,15 +274,16 @@ function displayExercises(exercises) {
               }
               ${createLevelSelector(exercise)}
               <div class="dialog-btns">
-                <button class="btn-add-to-list" data-exercise-id="${
-                  exercise.id
-                }">add</button>
+                <button class="select-btn" data-exercise-id="${exercise.id}">${
+      isSelected ? "Remover" : "Adicionar"
+    }</button>
                 <button class="close-dialog">close</button>
               </div>
             </dialog>
-        `
-    )
-    .join("");
+        `;
+    if (isSelected) card.classList.add("selected");
+    container.appendChild(card);
+  });
 
   // Configurar eventos para cada exercício
   exercises.forEach((exercise) => {
@@ -304,6 +313,74 @@ document.addEventListener("click", function (event) {
   }
 });
 
+// Função de adicionar exercicio para ser salvo:
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("select-btn")) {
+    const card = event.target.closest(".exercise-card");
+    const exerciseId = parseInt(card.dataset.id);
+    const exercise = exercisesMap.get(exerciseId);
+    const levelKey = document.querySelector(`#level-${exercise.id}`).value;
+    const userRM = parseFloat(
+      document.querySelector(`#rm-${exercise.id}`)?.value
+    );
+
+    // pega o nível escolhido
+    const baseLevel = exercise.level[levelKey]; // {reps: '4-6', load: '75-90% 1RM'}
+
+    let newLevel = { ...baseLevel };
+
+    // se existir "load" e o user digitou algo numérico
+    if (baseLevel.load && !isNaN(userRM)) {
+      // extrai os percentuais (ex: 75 e 90)
+      const match = baseLevel.load.match(/(\d+)-(\d+)%/);
+      if (match) {
+        const minPercent = parseFloat(match[1]);
+        const maxPercent = parseFloat(match[2]);
+
+        // calcula os valores
+        const minLoad = ((minPercent / 100) * userRM).toFixed(0);
+        const maxLoad = ((maxPercent / 100) * userRM).toFixed(0);
+
+        // substitui o load pelo valor calculado
+        newLevel.load = `${minLoad}-${maxLoad}kg`;
+      }
+    }
+
+    // monta o novo objeto do exercício
+    const newExercise = {
+      ...exercise,
+      level: { [levelKey]: newLevel },
+    };
+
+    const alreadySelectedIndex = selectedExercises.findIndex(
+      (ex) => ex.id === exerciseId
+    );
+
+    if (alreadySelectedIndex >= 0) {
+      // ✅ já estava selecionado → remover
+      selectedExercises.splice(alreadySelectedIndex, 1);
+      card.classList.remove("selected");
+      event.target.textContent = "Adicionar";
+    } else {
+      // não estava selecionado → adicionar
+      selectedExercises.push(newExercise);
+      card.classList.add("selected");
+      event.target.textContent = "Remover";
+    }
+  }
+});
+
+// Ir para a próxima página
+document.getElementById("next-btn").addEventListener("click", () => {
+  if (selectedExercises.length > 0) {
+    stateManager.updateExercises(selectedExercises).then(() => {
+      window.location.href = "../../pages/reps-config.html";
+    });
+  } else {
+    alert("selecione pelo menos 1 exercicio");
+  }
+});
+
 // Fechar modal clicando no backdrop (área escura atrás)
 document.addEventListener(
   "click",
@@ -328,7 +405,7 @@ async function init() {
       selectedCategories,
       selectedMuscleGroups
     );
-
+    exercisesMap = new Map(filteredExercises.map((ex) => [ex.id, ex]));
     // Exibir resultados
     displayExercises(filteredExercises);
   } catch (error) {
