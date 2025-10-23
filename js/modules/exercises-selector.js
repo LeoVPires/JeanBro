@@ -3,14 +3,14 @@ let currentSelections = {};
 
 // Carregar seleções do localStorage
 function loadSelections() {
-  const selectedWorkouts = JSON.parse(
-    localStorage.getItem("selectedWorkouts") || "[]"
+  const selectedCategories = JSON.parse(
+    localStorage.getItem("selectedCategories") || "[]"
   );
-  const selectedMuscleGroup = JSON.parse(
-    localStorage.getItem("selectedMuscleGroup") || "[]"
+  const selectedMuscleGroups = JSON.parse(
+    localStorage.getItem("selectedMuscleGroups") || "[]"
   );
 
-  return { selectedWorkouts, selectedMuscleGroup };
+  return { selectedCategories, selectedMuscleGroups };
 }
 
 // Carregar exercícios do JSON
@@ -28,14 +28,14 @@ async function loadExercises() {
 }
 
 // Filtrar exercícios baseado nas seleções
-function filterExercises(exercises, selectedWorkouts, selectedMuscleGroup) {
+function filterExercises(exercises, selectedCategories, selectedMuscleGroups) {
   return exercises.filter((exercise) => {
     const matchesWorkout =
-      selectedWorkouts.length === 0 ||
-      selectedWorkouts.includes(exercise.category);
+      selectedCategories.length === 0 ||
+      selectedCategories.includes(exercise.category);
     const matchesMuscle =
-      selectedMuscleGroup.length === 0 ||
-      selectedMuscleGroup.includes(exercise.muscleGroup);
+      selectedMuscleGroups.length === 0 ||
+      selectedMuscleGroups.includes(exercise.muscleGroup);
 
     return matchesWorkout && matchesMuscle;
   });
@@ -202,16 +202,18 @@ function setupExerciseEvents(exercise) {
 function displayExercises(exercises) {
   const container = document.getElementById("exerciseList");
   const filtersContainer = document.getElementById("appliedFilters");
-  const { selectedWorkouts, selectedMuscleGroup } = loadSelections();
+  const { selectedCategories, selectedMuscleGroups } = loadSelections();
 
   // Mostrar filtros aplicados
   filtersContainer.innerHTML = `
         <p><strong>Tipos de Treino:</strong> ${
-          selectedWorkouts.length > 0 ? selectedWorkouts.join(", ") : "Nenhum"
+          selectedCategories.length > 0
+            ? selectedCategories.join(", ")
+            : "Nenhum"
         }</p>
         <p><strong>Grupos Musculares:</strong> ${
-          selectedMuscleGroup.length > 0
-            ? selectedMuscleGroup.join(", ")
+          selectedMuscleGroups.length > 0
+            ? selectedMuscleGroups.join(", ")
             : "Nenhum"
         }</p>
     `;
@@ -316,15 +318,15 @@ document.addEventListener(
 // Função principal que orquestra o carregamento
 async function init() {
   try {
-    const { selectedWorkouts, selectedMuscleGroup } = loadSelections();
+    const { selectedCategories, selectedMuscleGroups } = loadSelections();
 
     // Carregar e filtrar exercícios
     const allExercises = await loadExercises();
 
     const filteredExercises = filterExercises(
       allExercises,
-      selectedWorkouts,
-      selectedMuscleGroup
+      selectedCategories,
+      selectedMuscleGroups
     );
 
     // Exibir resultados
