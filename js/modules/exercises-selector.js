@@ -367,6 +367,8 @@ document.addEventListener("click", (event) => {
       card.classList.add("selected");
       event.target.textContent = "Remover";
     }
+    console.log("aaaaaaaa");
+    console.log(selectedExercises);
   }
 });
 

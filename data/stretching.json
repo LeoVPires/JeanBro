@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Rotação de Braços Completa",
+    "muscleGroups": ["ombros", "peito", "costas", "tríceps"],
+    "type": "dynamic",
+    "description": "Em pé, com os braços estendidos, faça círculos grandes com ambos os braços. Execute 10 rotações para frente e 10 para trás, aumentando gradualmente a amplitude do movimento."
+  },
+  {
+    "name": "Agachamento com Torção",
+    "muscleGroups": ["pernas", "glúteos", "core", "lombar"],
+    "type": "dynamic",
+    "description": "Ao descer no agachamento, gire o tronco para um lado tocando o chão com as mãos. Suba e repita para o outro lado. Faça 8-10 repetições alternadas."
+  },
+  {
+    "name": "Polichinelos Adaptados",
+    "muscleGroups": ["pernas", "ombros", "peito", "panturrilhas"],
+    "type": "dynamic",
+    "description": "Execute polichinelos em movimento mais lento e controlado, focando na amplitude completa dos braços e pernas. Faça por 30-45 segundos."
+  },
+  {
+    "name": "Alongamento Dinâmico de Panturrilha",
+    "muscleGroups": ["panturrilhas", "posterior da coxa"],
+    "type": "dynamic",
+    "description": "Em pé, dê um passo à frente e flexione o joelho da frente, mantendo a perna de trás estendida com calcanhar no chão. Alterne as pernas por 10-12 repetições cada."
+  },
+  {
+    "name": "Giro de Quadril",
+    "muscleGroups": ["quadris", "glúteos", "lombar"],
+    "type": "dynamic",
+    "description": "Com as mãos nos quadris, faça círculos com o quadril como se estivesse usando um bambolê. 8-10 giros em cada direção."
+  },
+  {
+    "name": "Alongamento de Gato e Vaca",
+    "muscleGroups": ["lombar", "costas", "core", "abdômen"],
+    "type": "static",
+    "description": "Em quatro apoios, alterne entre arquear as costas para cima (como um gato) e afundar a barriga em direção ao chão. Mantenha cada posição por 20-30 segundos."
+  },
+  {
+    "name": "Alongamento de Quadril Sentado",
+    "muscleGroups": ["glúteos", "quadris", "lombar"],
+    "type": "static",
+    "description": "Sentado no chão, cruze uma perna sobre a outra e abrace o joelho em direção ao peito. Mantenha por 25-30 segundos cada lado."
+  },
+  {
+    "name": "Alongamento de Panturrilha na Parede",
+    "muscleGroups": ["panturrilhas", "posterior da coxa"],
+    "type": "static",
+    "description": "Apoie as mãos na parede, coloque uma perna atrás da outra e mantenha o calcanhar de trás no chão. Segure por 25-30 segundos cada perna."
+  },
+  {
+    "name": "Alongamento de Tríceps Atrás da Cabeça",
+    "muscleGroups": ["tríceps", "ombros", "costas"],
+    "type": "static",
+    "description": "Levante um braço, dobre o cotovelo e com a outra mão puxe suavemente o cotovelo em direção à cabeça. Mantenha 25-30 segundos cada braço."
+  },
+  {
+    "name": "Alongamento de Peitoral na Porta",
+    "muscleGroups": ["peito", "ombros", "bíceps"],
+    "type": "static",
+    "description": "Segure na moldura da porta com os braços em 90 graus e dê um passo à frente, sentindo o alongamento no peito. Mantenha 25-30 segundos."
+  },
+  {
+    "name": "Alongamento de Lombar em Pé",
+    "muscleGroups": ["lombar", "glúteos", "posterior da coxa"],
+    "type": "static",
+    "description": "Em pé, dobre os joelhos levemente e incline o tronco para frente, deixando os braços pendurados. Relaxe completamente e segure por 30 segundos."
+  },
+  {
+    "name": "Alongamento de Pescoço com Auxílio da Mão",
+    "muscleGroups": ["pescoço", "trapézio"],
+    "type": "static",
+    "description": "Sentado ou em pé, incline a cabeça para um lado e use a mão para puxar suavemente. Mantenha por 20-25 segundos cada lado. Não force demasiado."
+  },
+  {
+    "name": "Alongamento de Criança (Child's Pose)",
+    "muscleGroups": ["lombar", "costas", "ombros", "glúteos"],
+    "type": "static",
+    "description": "Ajoelhado no chão, sente-se sobre os calcanhares e estenda os braços para frente, apoiando a testa no solo. Relaxe completamente por 30-45 segundos."
+  },
+  {
+    "name": "Alongamento de Torção da Coluna Sentado",
+    "muscleGroups": ["lombar", "core", "ombros", "glúteos"],
+    "type": "static",
+    "description": "Sentado com as pernas estendidas, cruze uma perna sobre a outra e gire o tronco na direção oposta. Mantenha por 25-30 segundos cada lado."
+  },
+  {
+    "name": "Alongamento de Braços Entrelaçados",
+    "muscleGroups": ["ombros", "peito", "costas", "tríceps"],
+    "type": "static",
+    "description": "Entrelace os dedos atrás das costas e estique os braços, elevando-os suavemente. Mantenha por 20-25 segundos."
+  }
+]
