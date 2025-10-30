@@ -304,7 +304,10 @@ document.addEventListener("click", function (event) {
   }
 
   // Fechar o Dialog
-  if (event.target.classList.contains("close-dialog")) {
+  if (
+    event.target.classList.contains("close-dialog") ||
+    event.target.classList.contains("select-btn")
+  ) {
     // Encontra o dialog ancestral mais próximo e o fecha
     const dialog = event.target.closest("dialog");
     if (dialog) {
@@ -367,8 +370,9 @@ document.addEventListener("click", (event) => {
       card.classList.add("selected");
       event.target.textContent = "Remover";
     }
-    console.log("aaaaaaaa");
-    console.log(selectedExercises);
+
+    // DEBUG: printar os exercicios selecionados ao adicionar/remover exercicios
+    // console.log(selectedExercises);
   }
 });
 

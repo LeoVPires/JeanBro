@@ -1,0 +1,192 @@
+.headder {
+  display: flex;
+  justify-content: space-between;
+}
+.stretch-item {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 15px 15px 45px; /* Mais espaço à esquerda para o handler */
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  cursor: move;
+  transition: all 0.3s ease;
+  min-height: 80px;
+}
+
+.stretch-item.dragging {
+  opacity: 0.5;
+  background: #e3f2fd;
+  transform: rotate(2deg);
+}
+
+.stretch-item:hover {
+  background: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Handler na esquerda */
+.drag-handler {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: #e9ecef;
+  border-right: 1px solid #dee2e6;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+}
+
+.drag-handle {
+  font-size: 20px;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.stretch-header {
+  position: relative;
+  margin-bottom: 8px;
+  padding-right: 120px; /* Espaço para os músculos à direita */
+}
+
+.stretch-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 120px); /* Não sobrepõe os músculos */
+}
+
+/* Grupos musculares no canto superior direito */
+.muscle-groups {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #007bff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stretch-content {
+  margin-top: 5px;
+}
+
+.stretch-content p {
+  margin: 3px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.stretch-content p:first-of-type {
+  color: #666;
+  font-style: italic;
+}
+
+/* Estilo para a descrição */
+.stretch-description {
+  color: #555 !important;
+  font-style: normal !important;
+  margin-top: 8px !important;
+}
+
+/* Estados de drag */
+.stretch-item.dragging .drag-handler {
+  background: #007bff;
+}
+
+.stretch-item.dragging .drag-handle {
+  color: white;
+}
+
+.stretch-toggle-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.stretch-toggle-btn.remove {
+  background: #ff6b6b;
+}
+
+.stretch-toggle-btn.add {
+  background: #51cf66;
+}
+
+.stretch-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Estado quando o alongamento está removido */
+.stretch-item.removed {
+  opacity: 0.8;
+  background: #f8f9fa;
+}
+
+.stretch-item.removed .stretch-header h4,
+.stretch-item.removed .muscle-groups,
+.stretch-item.removed .stretch-content {
+  color: #6c757d;
+  text-decoration: line-through;
+}
+
+.stretch-item.removed .drag-handler {
+  background: #dee2e6;
+  cursor: not-allowed;
+}
+
+.stretch-item.removed .drag-handle {
+  color: #adb5bd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .stretch-item {
+    padding: 12px 12px 12px 40px;
+  }
+
+  .drag-handler {
+    width: 35px;
+  }
+
+  .stretch-header {
+    padding-right: 100px;
+  }
+
+  .stretch-header h4 {
+    font-size: 14px;
+    max-width: calc(100% - 100px);
+  }
+
+  .muscle-groups {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+}
+
+.hidden {
+  display: none;
+}

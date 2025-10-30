@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../css/stretching-config.css" />
   </head>
   <body>
     <div class="header">
@@ -18,42 +19,38 @@
               Escolha como você quer atribuir um conjunto de alongamentos ao seu
               treino:
             </legend>
-            <input
-              type="checkbox"
-              id="before"
-              name="streching"
-              value="before"
-              onclick="streatchingCheck(this)"
-            />
+            <input type="radio" id="before" name="stretching" value="before" />
             <label for="before">Apenas antes do treino</label><br />
+
+            <input type="radio" id="after" name="stretching" value="after" />
+            <label for="after">Apenas depois do treino</label><br />
+
             <input
-              type="checkbox"
+              type="radio"
               id="beforeAndAfter"
-              name="streching"
+              name="stretching"
               value="beforeAndAfter"
-              onclick="streatchingCheck(this)"
             />
             <label for="beforeAndAfter">Antes e depois do treino</label><br />
-            <input
-              type="checkbox"
-              id="after"
-              name="streching"
-              value="after"
-              onclick="streatchingCheck(this)"
-            />
-            <label for="after">Apenas depois do treino</label><br />
-            <input
-              type="checkbox"
-              id="none"
-              name="streching"
-              value="none"
-              onclick="streatchingCheck(this)"
-            />
+
+            <input type="radio" id="none" name="stretching" value="none" />
             <label for="none">Nenhum</label><br />
           </fieldset>
         </form>
       </div>
-      <div class="streches"></div>
+      <div class="stretches">
+        <div class="stretches-before hidden">
+          <h3>Alongamentos antes dos exercícios:</h3>
+          <div class="stretches-list" id="dynamic-stretches"></div>
+        </div>
+        <div class="stretches-after hidden">
+          <h3>Alongamentos depois dos exercícios:</h3>
+          <div class="stretches-list" id="static-stretches"></div>
+        </div>
+      </div>
     </div>
+    <script type="module" src="../js/shared/idbManager.js"></script>
+    <script type="module" src="../js/shared/stateManager.js"></script>
+    <script type="module" src="../js/modules/stretching-config.js"></script>
   </body>
 </html>

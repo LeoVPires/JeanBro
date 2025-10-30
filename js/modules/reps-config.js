@@ -111,7 +111,6 @@ class RepsConfig {
     return card;
   }
 
-  // Resto dos métodos permanecem iguais...
   setupEventListeners() {
     const sameSetsCheckbox = document.getElementById("same-sets-for-all");
     const globalSetsContainer = document.getElementById(
@@ -243,7 +242,7 @@ class RepsConfig {
         exerciseOrder: this.exercises.map((ex) => ex.id),
       };
 
-      await stateManager.updateSeriesConfig(seriesConfig, customSeries);
+      await stateManager.updateSeriesConfig(seriesConfig);
       window.location.href = "stretching-config.html";
     } catch (error) {
       console.error("Erro ao salvar configuração:", error);

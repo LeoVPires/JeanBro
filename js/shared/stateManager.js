@@ -13,7 +13,6 @@ class StateManager {
         sameForAll: true,
         globalSets: 3,
       },
-      customSeries: {}, // { exerciseId: number } para quando sameForAll é false
       routineConfig: {
         name: "",
         daysOfWeek: [],
@@ -82,9 +81,8 @@ class StateManager {
     await this.saveState();
   }
 
-  async updateSeriesConfig(config, customSeries = {}) {
+  async updateSeriesConfig(config) {
     this.currentState.seriesConfig = config;
-    this.currentState.customSeries = customSeries;
     this.currentState.currentStep = 5;
     await this.saveState();
   }
