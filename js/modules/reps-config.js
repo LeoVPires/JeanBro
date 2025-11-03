@@ -91,8 +91,6 @@ class RepsConfig {
                     `
                         : ""
                     }
-                    
-                    <!-- Remove a parte do calculated-load já que não temos userLoadMin/userLoadMax -->
                 </div>
 
                 <div class="custom-sets-container" style="display: none;">

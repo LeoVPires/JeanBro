@@ -6,16 +6,20 @@ class StateManager {
       currentStep: 1,
       selectedCategories: [],
       selectedMuscleGroups: [],
-      selectedExercises: [], // Exercícios selecionados com parâmetros básicos
-      stretchingSelections: [],
+      selectedExercises: [],
+      stretchingSelections: {
+        dynamic: [],
+        static: [],
+      },
       seriesConfig: {
-        type: "sequential", // ou "alternated"
+        type: "sequential",
         sameForAll: true,
         globalSets: 3,
       },
       routineConfig: {
         name: "",
         daysOfWeek: [],
+        schedule: null, // Corrigi o nome da propriedade
         notifications: false,
         notificationTime: "12:00",
         personalNotes: "",
@@ -75,8 +79,8 @@ class StateManager {
     await this.saveState();
   }
 
-  async updateStretching(stretchingSelections) {
-    this.currentState.stretchingSelections = stretchingSelections;
+  async updateStretching(stretchingData) {
+    this.currentState.stretchingSelections = stretchingData;
     this.currentState.currentStep = 4;
     await this.saveState();
   }
@@ -101,11 +105,12 @@ class StateManager {
         series: this.currentState.seriesConfig.sameForAll
           ? this.currentState.seriesConfig.globalSets
           : this.currentState.customSeries[exercise.id] || 3,
-        stretching:
-          this.currentState.stretchingSelections.find(
-            (s) => s.exerciseId === exercise.id
-          )?.stretching || [],
       })),
+
+      stretching: this.currentState.stretchingSelections || {
+        dynamic: [],
+        static: [],
+      },
       createdAt: new Date(),
       updatedAt: new Date(),
     };
